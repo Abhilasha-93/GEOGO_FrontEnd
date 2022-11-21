@@ -19,6 +19,10 @@ const Home = () => {
        id="full-name"
        label="Name"
        margin="normal"/><br></br>
+    <TextField
+       id="password"
+       label="Password"
+       margin="normal"/><br></br>
     <button varient="secondary" size="lg" type="button">Enter</button>
     </>;
 };
