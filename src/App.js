@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes,Route } from "react-router-dom";
-import Layout from "./component/pages/Layout"
-import Home from "./component/pages/Home"
-import Dashboard  from "./component/pages/Dashboard";
+import Layout from "./component/pages/Layout";
+import Login from "./component/pages/Login";
+import Events  from "./component/pages/Events";
+import Tickets from "./component/pages/Tickets";
+import Order  from "./component/pages/Order";
 
 function App() {
   return (
@@ -9,8 +11,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-             <Route index element={<Home />} />
-             <Route path="Dashboard" element={<Dashboard />} />
+             <Route index element={<Login />} />
+             <Route path="Events" element={<Events />} />
+             <Route path="Tickets" element={<Tickets />} />
+             <Route path="Order" element={<Order />} />
           </Route>
         </Routes>
       </BrowserRouter>
